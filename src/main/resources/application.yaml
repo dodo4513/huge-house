@@ -9,6 +9,8 @@ spring:
     database: POSTGRESQL
     generate-ddl: true
     properties:
+      hibernate.jdbc.lob.non_contextual_creation: true
       hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
   #  jpa.properties.hibernate.jdbc.lob.non_contextual_creation: true
   jackson.serialization.indent_output: true
